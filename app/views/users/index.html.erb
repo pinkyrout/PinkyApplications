@@ -1,1 +1,37 @@
-hello world!!
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>My Facebook</h1>
+
+<table border = 2,border-collapse: collapse>
+<tr>
+   <th>Name</th>
+   <th>Gender</th>
+   <th>Date of Birth</th>
+   <th>Email</th>
+<tr>
+<% @users.each do |user| %>
+<tr>
+<td> <%= user.name %> </td>
+<td> <%= user.gender %> </td>
+<td> <%= user.date_of_birth %> </td>
+<td> <%= user.email %> </td>
+</tr>
+<% end %>
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

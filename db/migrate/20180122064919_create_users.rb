@@ -10,8 +10,6 @@ class CreateUsers < ActiveRecord::Migration[5.1]
 
       t.timestamps
     end
-    #change_table :users do 
-    #user1 = User.create(name: 'pinky', gender: 'female', date_of_birth: 20180122, email: 'pinkyrout10@gmail.com', password: 'pinky123')
     end
 end
 
