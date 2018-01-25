@@ -1,0 +1,17 @@
+<h1>Your Address </h1>
+<table border = 2>
+<tr>
+<% if @address == nil %>
+<h1>
+<th>Hometown</th>
+<th>City</th>
+<th>Country</th>
+<th>Pincode</th>
+</tr>
+<tr>
+<td><%= @address.hometown %> </td>
+<td><%= @address.state %> </td>
+<td><%= @address.country %> </td>
+<td><%= @address.pincode %> </td>
+</tr>
+</table>
