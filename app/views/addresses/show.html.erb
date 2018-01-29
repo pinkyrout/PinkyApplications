@@ -1,8 +1,11 @@
 <h1>Your Address </h1>
 <table border = 2>
 <tr>
-<% if @address == nil %>
-<h1>
+<% if @address.nil? %>
+"You have not added your address"
+<br>
+<%= link_to 'Edit', new_user_address_path(@user) %>
+<% else %>
 <th>Hometown</th>
 <th>City</th>
 <th>Country</th>
@@ -15,3 +18,4 @@
 <td><%= @address.pincode %> </td>
 </tr>
 </table>
+<% end %>

@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  resources :users, only: [:index, :new, :create, :destroy, :show] do
+  resources :users do
   	resources :addresses
   	resources :posts
   end
-  resources :addresses
   #resources :address
   #resources :user
   root 'users#index'
