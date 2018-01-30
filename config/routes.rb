@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :users do
-  	resources :addresses
+  	resource :address
   	resources :posts
   end
   #resources :address
